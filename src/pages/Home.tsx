@@ -70,11 +70,11 @@ const rules = [
 
 export default function Home() {
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white w-full">
       {/* Hero Section */}
       <section id="home" className="pt-32 pb-20 px-4 min-h-screen flex flex-col justify-center relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-red-950/20 to-transparent pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-10 w-full">
           <div className="text-center space-y-6 mb-12">
             <h1 className="text-5xl md:text-7xl font-black tracking-wider mb-6">
               NSU <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">SOBERS</span>
