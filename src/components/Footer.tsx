@@ -126,7 +126,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="text-center md:text-right">
             <p className="text-gray-500 text-xs font-semibold uppercase tracking-wide">
-              © {currentYear} <a href="https://nsucec.com" className='hover:text-red-500 transition duration-300' target='_blank'>NSU Computer & Engineering Club.</a> All Rights Reserved.
+              © {currentYear} <a href="https://nsucec.com" className='hover:text-red-500 transition duration-300' target='_blank'>NSU Sobers.</a> All Rights Reserved.
             </p>
             {/* <p className="text-gray-600 text-xs mt-1">
               All Rights Reserved.

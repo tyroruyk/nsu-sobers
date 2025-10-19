@@ -61,7 +61,6 @@ const roadmapPhases = [
 
 const rules = [
   { title: 'Safety First', desc: 'Complete safety training, wear PPE, never work alone, report hazards immediately' },
-  { title: 'Financial Commitment', desc: 'BDT 5,000 initial + BDT 10,000/month until challenge, 50% refund post-sponsorship' },
   { title: 'Attendance', desc: 'Maintain 80% attendance at weekly meetings, 48-hour absence notice required' },
   { title: 'Academic Standing', desc: 'Maintain good standing at NSU, academics always take priority' },
   { title: 'Professional Conduct', desc: 'Zero tolerance for harassment, discrimination, or academic dishonesty' },
@@ -258,7 +257,7 @@ export default function Home() {
       </section>
 
       {/* Contact/Promotion Section */}
-      <section id="contact" className="py-20 px-4 bg-black">
+      {/* <section id="contact" className="py-20 px-4 bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-black tracking-wider mb-8">
             <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">VISIT</span> CEC WEBSITE
@@ -282,7 +281,7 @@ export default function Home() {
             <p>NSU Sobers • NSU Computer & Engineering Club • North South University</p>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }
