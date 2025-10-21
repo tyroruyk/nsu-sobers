@@ -1,4 +1,4 @@
-import { Menu, Rocket, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Navbar() {
@@ -37,9 +37,7 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <a href="#" className="flex items-center space-x-2 group">
               <div className="relative">
-                <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center border-2 border-white transform group-hover:scale-110 transition-transform">
-                  <Rocket className="text-white w-5 h-5" />
-                </div>
+                <img src='/nsu-sobers/logo.png' alt="NSU Sobers Logo" className="h-10 w-10 object-contain" />
                 <div className="absolute inset-0 rounded-full border-2 border-red-600 opacity-0 group-hover:opacity-100 animate-pulse"></div>
               </div>
               <div className="flex flex-col sm:block">
@@ -67,7 +65,7 @@ export default function Navbar() {
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
             <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-bold tracking-widest text-xs uppercase border-2 border-red-600 hover:border-white transition-all duration-200 transform hover:shadow-lg hover:cursor-pointer hover:shadow-red-600/50">
-              JOIN MISSION
+              EXPLORE ROVER
             </button>
           </div>
 

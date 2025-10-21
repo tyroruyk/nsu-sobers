@@ -255,33 +255,31 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Contact/Promotion Section */}
-      {/* <section id="contact" className="py-20 px-4 bg-black">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-black tracking-wider mb-8">
-            <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">VISIT</span> CEC WEBSITE
-          </h2>
-
-          <p className="text-lg text-gray-300 mb-8">
-            Learn more about the <span className='text-red-500'>North South University Computer &amp; Engineering Club (CEC)</span>, its initiatives, events, and how it empowers students in tech and engineering.
-          </p>
-
+      
+      {/* Contact Section */}
+      <section id="contact" className="py-12 pb-20 px-4 bg-gradient-to-b from-black to-red-950/5">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-red-400 mb-2">CONTACT</h2>
+          <p className="text-gray-400 mb-4">Connect with us on Facebook</p>
           <a
-            href="https://nsucec.com"
+            href="https://facebook.com/nsusobers"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white px-8 py-3 font-bold tracking-widest text-sm uppercase border-2 border-red-600 hover:border-white transition-all duration-200 transform hover:shadow-lg hover:shadow-red-600/50"
-            aria-label="Open the North South University Computer & Engineering Club website in a new tab"
+            className="inline-flex items-center space-x-3 text-white hover:underline pt-4"
           >
-            Go to CEC Website
+            {/* NSU SOBERS text logo (same gradient style as hero) */}
+            <span className="text-2xl font-black tracking-wider">
+              <img src='/nsu-sobers/text-logo.png' alt='NSU SOBERS Logo' className='inline-block h-12'/>
+            </span>
+            <span className="font-semibold text-2xl pl-2">on Facebook</span>
           </a>
-
-          <div className="mt-12 pt-8 border-t border-red-600/30 text-gray-500 text-sm">
-            <p>NSU Sobers • NSU Computer & Engineering Club • North South University</p>
-          </div>
         </div>
-      </section> */}
+      </section>
+
+      <div className="mt-4 pt-8 border-t border-red-600/30 text-gray-500 text-sm max-w-4xl mx-auto text-center py-10 px-4 bg-black">
+        <p>NSU Sobers • North South University</p>
+      </div>        
+
     </div>
   );
 }
