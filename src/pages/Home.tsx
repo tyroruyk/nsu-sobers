@@ -1,6 +1,6 @@
 import { Target, Users, Zap } from 'lucide-react';
 import TeamMember from '../components/TeamMember';
-import { facultyAdvisor, members } from '../data/members';
+import { facultyAdvisor, membersBySection } from '../data/members';
 
 const roadmapPhases = [
   {
@@ -175,24 +175,24 @@ export default function Home() {
             <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">CORE</span> TEAM
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-6xl mx-auto">
-            {/* {members.map((member, idx) => (
-              <TeamMember
-                key={idx}
-                name={member.name}
-                role={member.role}
-                image={member.image}
-              />
-            ))} */}
-            {members.sort((a, b) => a.name.localeCompare(b.name)).map((member, idx) => (
-              <TeamMember
-              key={idx}
-              name={member.name}
-              role={member.role}
-              image={member.image}
-              />
-            ))}
-          </div>
+          {membersBySection.map((section, sectionIdx) => (
+            <div key={sectionIdx} className="mb-12">
+              <h3 className="text-2xl font-bold text-center mb-6 text-red-400">
+                {section.sectionTitle}
+              </h3>
+              <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+                {section.members.map((member) => (
+                  <div className="flex-shrink-0 w-64"> {/* fixed width */}
+                    <TeamMember
+                      name={member.name}
+                      role={member.role}
+                      image={member.image}
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
 
           <div className="mt-16 text-center">
             <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
@@ -279,7 +279,6 @@ export default function Home() {
       <div className="mt-4 pt-8 border-t border-red-600/30 text-gray-500 text-sm max-w-4xl mx-auto text-center py-10 px-4 bg-black">
         <p>NSU Sobers • North South University</p>
       </div>        
-
     </div>
   );
 }

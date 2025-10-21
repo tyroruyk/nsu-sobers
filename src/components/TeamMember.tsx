@@ -34,7 +34,7 @@ export default function TeamMember({ name, role, image }: TeamMemberProps) {
         </h3>
         <div className="h-1 w-12 bg-red-600 mx-auto group-hover:w-20 transition-all duration-300"></div>
         <p className="text-sm text-gray-400 group-hover:text-gray-300 transition-colors duration-300 font-medium">
-          {role}, NSUCEC
+          {role}
         </p>
       </div>
     </div>

@@ -12,15 +12,56 @@ export const facultyAdvisor: Member = {
   link: 'https://ece.northsouth.edu/people/dr-mohammad-abdul-qayum/'
 };
 
-export const members: Member[] = [
-  { name: 'Md. Shefatullah Bin Sadik', role: 'Vice President (Internal)', image: undefined },
-  { name: 'Arafatul Hasan Sadoy', role: 'Joint Secretary', image: undefined },
-  { name: 'Ibrahim Chowdhury', role: 'Sub-Executive', image: undefined },
-  { name: 'S M Uday Haider', role: 'In-Charge', image: undefined },
-  { name: 'Safin Ahmed', role: 'In-Charge', image: undefined },
-  { name: 'Md. Athar Shihab', role: 'Probationary Member', image: undefined },
-  { name: 'Saif Rahman', role: 'In-Charge', image: undefined },
-  { name: 'Fahim Muntasir Galib', role: 'General Member', image: undefined },
-  { name: 'Avishek Dutta', role: 'In-Charge', image: undefined },
-  { name: 'Iftisham Hossain Sajjil', role: 'General Member', image: undefined },
+export const membersBySection = [
+  {
+    sectionTitle: 'Co-Leaders',
+    members: [
+      { name: 'S M Uday Haider', role: 'Co-Leader', image: undefined },
+      { name: 'Safin Ahmed', role: 'Co-Leader', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Management',
+    members: [
+      { name: 'Ibrahim Chowdhury', role: 'Team Manager', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Catalyst',
+    members: [
+      { name: 'Md. Shefatullah Bin Sadik', role: 'Team Catalyst', image: undefined },
+      { name: 'Arafatul Hasan Sadoy', role: 'Team Catalyst', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Website Team',
+    members: [
+      { name: 'Avishek Dutta', role: 'Lead', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Software Team',
+    members: [
+      { name: 'Avishek Dutta', role: 'Lead', image: undefined },
+      { name: 'Fahim Hossain Siam', role: 'Member', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Documentation Team',
+    members: [
+      { name: 'Fahim Muntasir Galib', role: 'Lead', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Electrical Team',
+    members: [
+      { name: 'Saif Rahman', role: 'Lead', image: undefined },
+    ],
+  },
+  {
+    sectionTitle: 'Mechanical Team',
+    members: [
+      { name: 'TBA', role: 'Lead', image: undefined },
+    ],
+  },
 ];
