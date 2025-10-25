@@ -64,9 +64,12 @@ export default function Navbar() {
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-bold tracking-widest text-xs uppercase border-2 border-red-600 hover:border-white transition-all duration-200 transform hover:shadow-lg hover:cursor-pointer hover:shadow-red-600/50">
+            <a
+              href="/rover"
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 font-bold tracking-widest text-xs uppercase border-2 border-red-600 hover:border-white transition-all duration-200 transform hover:shadow-lg hover:cursor-pointer hover:shadow-red-600/50 inline-block"
+            >
               EXPLORE ROVER
-            </button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -104,6 +107,14 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            {/* Rover link for mobile */}
+            <a
+              href="/rover"
+              className="text-gray-300 hover:text-white hover:bg-red-600 block px-3 py-2 rounded text-xs font-semibold tracking-wide uppercase transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              EXPLORE ROVER
+            </a>
             <div className="px-4 py-3 pt-4 border-t border-red-600">
               <button className="w-full bg-red-600 hover:bg-red-700 text-white px-3 py-2 font-bold tracking-widest text-xs uppercase border-2 border-red-600 hover:border-white hover:cursor-pointer transition-all">
                 JOIN MISSION
