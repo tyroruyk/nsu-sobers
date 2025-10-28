@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <img src='/nsu-sobers/logo.png' alt="NSU Sobers Logo" className="h-10 w-10 object-contain" />
+              <img src='/logo.png' alt="NSU Sobers Logo" className="h-10 w-10 object-contain" />
               <div>
                 <h3 className="text-white font-bold text-base tracking-widest">NSU SOBERS</h3>
               </div>

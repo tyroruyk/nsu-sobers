@@ -13,7 +13,7 @@ function Loader() {
 }
 
 function ModelScene() {
-  const gltf = useLoader(GLTFLoader, '/nsu-sobers/models/rover.glb');
+  const gltf = useLoader(GLTFLoader, '/models/rover.glb');
 
   useEffect(() => {
     if (!gltf || !gltf.scene) return;

@@ -6,7 +6,7 @@ import Rover from "./pages/Rover";
 
 function App() {
   return (
-    <Router basename="/nsu-sobers">
+    <Router>
       <div className="flex flex-col min-h-screen bg-black">
         <Navbar />
         <main className="flex-1 w-full">
