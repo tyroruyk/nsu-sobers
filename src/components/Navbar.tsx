@@ -1,17 +1,20 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+  const showLinks = location.pathname === '/';
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const navLinks = [
-    { name: 'Home', href: '/#home' },
+    { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Team', href: '/#team' },
+    { name: 'Team', href: '#team' },
     { name: 'Roadmap', href: '#roadmap' },
     { name: 'Rules', href: '#rules' },
     { name: 'Contact', href: '#contact' },
@@ -46,21 +49,23 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-1">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  className="text-gray-300 hover:text-white hover:border-b-2 hover:border-red-600 px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200 uppercase"
-                  onClick={link.href.startsWith('#') ? handleSmoothScroll : undefined}
-                >
-                  {link.name}
-                </a>
-              ))}
+          {/* Desktop Navigation (only on home) */}
+          {showLinks && (
+            <div className="hidden md:block">
+              <div className="ml-10 flex items-baseline space-x-1">
+                {navLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.href}
+                    className="text-gray-300 hover:text-white hover:border-b-2 hover:border-red-600 px-3 py-2 text-xs font-semibold tracking-wide transition-all duration-200 uppercase"
+                    onClick={link.href.startsWith('#') ? handleSmoothScroll : undefined}
+                  >
+                    {link.name}
+                  </a>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {/* Desktop CTA Button */}
           <div className="hidden md:block">
@@ -92,7 +97,7 @@ export default function Navbar() {
       {isOpen && (
         <div className="md:hidden bg-black border-t-2 border-red-600">
           <div className="px-2 pt-4 pb-4 space-y-2">
-            {navLinks.map((link) => (
+            {showLinks && navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}

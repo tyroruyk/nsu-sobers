@@ -158,7 +158,7 @@ export default function Home() {
                 </p>
                 <div className="h-1 w-12 bg-red-600 mx-auto md:mx-0 rounded-full group-hover:w-20 transition-all duration-300 mb-1"></div>
                 <div>
-                  <p className="text-red-400 font-bold"><a href={facultyAdvisor.link} target="_blank" rel="noopener noreferrer">{facultyAdvisor.name}</a></p>
+                  <p className="text-red-400 font-bold hover:text-red-600 transition duration-300"><a href={facultyAdvisor.link} target="_blank" rel="noopener noreferrer">{facultyAdvisor.name}</a></p>
                   <p className="text-gray-400 text-sm">{facultyAdvisor.role}</p>
                   <p className="text-gray-400 text-sm">Faculty Advisor, NSU Sobers</p>
                 </div>

@@ -7,7 +7,7 @@ export interface Member {
 
 export const facultyAdvisor: Member = {
   name: 'Dr. Mohammad Abdul Qayum',
-  role: 'Assistant Professor, Dept. of ECE',
+  role: 'Assistant Professor, Dept. of ECE, North South University',
   image: 'members/abdul-qayum.jpg',
   link: 'https://ece.northsouth.edu/people/dr-mohammad-abdul-qayum/'
 };
