@@ -9,9 +9,9 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '/#home' },
     { name: 'About', href: '#about' },
-    { name: 'Team', href: '#team' },
+    { name: 'Team', href: '/#team' },
     { name: 'Roadmap', href: '#roadmap' },
     { name: 'Rules', href: '#rules' },
     { name: 'Contact', href: '#contact' },
@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* NASA-style Logo */}
           <div className="flex-shrink-0">
-            <a href="#" className="flex items-center space-x-2 group">
+            <a href="/" className="flex items-center space-x-2 group">
               <div className="relative">
                 <img src='/logo.png' alt="NSU Sobers Logo" className="h-10 w-10 object-contain" />
                 <div className="absolute inset-0 rounded-full border-2 border-red-600 opacity-0 group-hover:opacity-100 animate-pulse"></div>

@@ -269,7 +269,7 @@ export default function Home() {
           >
             {/* NSU SOBERS text logo (same gradient style as hero) */}
             <span className="text-2xl font-black tracking-wider">
-              <img src='/nsu-sobers/text-logo.png' alt='NSU SOBERS Logo' className='inline-block h-12'/>
+              <img src='/text-logo.png' alt='NSU SOBERS Logo' className='inline-block h-12'/>
             </span>
             <span className="font-semibold text-2xl pl-2">on Facebook</span>
           </a>

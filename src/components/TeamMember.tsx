@@ -15,7 +15,7 @@ export default function TeamMember({ name, role, image }: TeamMemberProps) {
         <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-red-600 group-hover:border-red-400 transition-all duration-300">
           {image ? (
             <img 
-              src={image} 
+              src={`members/${image}`} 
               alt={name}
               className="w-full h-full object-cover"
             />
