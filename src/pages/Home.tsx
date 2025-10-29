@@ -175,24 +175,37 @@ export default function Home() {
             <span className="bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">CORE</span> TEAM
           </h2>
 
-          {membersBySection.map((section, sectionIdx) => (
-            <div key={sectionIdx} className="mb-12">
-              <h3 className="text-2xl font-bold text-center mb-6 text-red-400">
-                {section.sectionTitle}
-              </h3>
-              <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
-                {section.members.map((member) => (
-                  <div className="flex-shrink-0 w-64"> {/* fixed width */}
-                    <TeamMember
-                      name={member.name}
-                      role={member.role}
-                      image={member.image}
-                    />
-                  </div>
-                ))}
+          {membersBySection.map((section, sectionIdx) => {
+            // Sort members so that non-'Member' roles remain first in their original order,
+            // and entries with role 'Member' are alphabetized by name among themselves.
+            const sortedMembers = [...section.members].sort((a, b) => {
+              const aIsMember = a.role === 'Member';
+              const bIsMember = b.role === 'Member';
+              if (aIsMember && !bIsMember) return 1; // put Members after non-Members
+              if (!aIsMember && bIsMember) return -1; // keep non-Members before Members
+              if (aIsMember && bIsMember) return a.name.localeCompare(b.name);
+              return 0; // keep original relative order for non-Members
+            });
+
+            return (
+              <div key={sectionIdx} className="mb-12">
+                <h3 className="text-2xl font-bold text-center mb-6 text-red-400">
+                  {section.sectionTitle}
+                </h3>
+                <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+                  {sortedMembers.map((member) => (
+                    <div key={member.name} className="flex-shrink-0 w-64"> {/* fixed width */}
+                      <TeamMember
+                        name={member.name}
+                        role={member.role}
+                        image={member.image}
+                      />
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
 
           <div className="mt-16 text-center">
             <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">

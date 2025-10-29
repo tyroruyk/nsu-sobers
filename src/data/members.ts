@@ -14,10 +14,10 @@ export const facultyAdvisor: Member = {
 
 export const membersBySection = [
   {
-    sectionTitle: 'Co-Leaders',
+    sectionTitle: 'Team Leaders',
     members: [
-      { name: 'S M Uday Haider', role: 'Co-Leader', image: 'uday-haider.jpg' },
-      { name: 'Safin Ahmed', role: 'Co-Leader', image: 'safin-ahmed.jpg' },
+      { name: 'S M Uday Haider', role: 'Team Leader', image: 'uday-haider.jpg' },
+      { name: 'Safin Ahmed', role: 'Team Leader', image: 'safin-ahmed.jpg' },
     ],
   },
   {
@@ -43,7 +43,6 @@ export const membersBySection = [
     sectionTitle: 'Software Team',
     members: [
       { name: 'Avishek Dutta', role: 'Lead', image: 'avishek-dutta.jpg' },
-      { name: 'Fahim Hossain Siam', role: 'Member', image: 'fahim-hossain.jpg' },
     ],
   },
   {
@@ -59,9 +58,23 @@ export const membersBySection = [
     ],
   },
   {
-    sectionTitle: 'Mechanical Team',
+    sectionTitle: 'Graphics Team',
     members: [
-      { name: 'Fahim Hossain Siam', role: 'Lead', image: 'fahim-hossain.jpg' },
+      { name: 'Mobasshir Amin Efaz', role: 'Lead', image: 'mobasshir-amin.jpg' },
     ],
   },
+  {
+    sectionTitle: 'General Members',
+    members: [
+      { name: 'Fahim Hossain Siam', role: 'Member', image: 'fahim-hossain.jpg' },
+      { name: 'Abrar Mahin', role: 'Member', image: undefined },
+      { name: 'Afifa Tabassum Puspita', role: 'Member', image: undefined },
+      { name: 'Hashibur R Shahed', role: 'Member', image: undefined },
+      { name: 'Iftisham Hossain Sajjil', role: 'Member', image: undefined },
+      { name: 'Mahmudun Nabi', role: 'Member', image: 'mahmudun-nabi.jpg' },
+      { name: 'Samirah Ohona', role: 'Member', image: undefined },
+      { name: 'Sorozini Indira Zahid', role: 'Member', image: undefined },
+      { name: 'Suryashekharini Bintey Bashar', role: 'Member', image: undefined },
+    ],
+  }
 ];
